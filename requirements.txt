@@ -1,0 +1,23 @@
+# Framework de la API
+fastapi
+uvicorn[standard]
+
+# Librerías de LangChain y Hugging Face
+langchain
+langgraph
+langchain-huggingface
+langchain-community
+langchain-text-splitters
+langchain-chroma
+
+# Utilidades
+python-dotenv
+pypdf
+sentence-transformers
+
+# Base de Datos de Vectores
+chromadb
+
+# Para pruebas
+pytest
+requests

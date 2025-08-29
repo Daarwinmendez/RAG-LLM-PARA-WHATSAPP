@@ -1,0 +1,29 @@
+name: env-rag
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  # Base del entorno
+  - python=3.12
+
+  # Dependencias principales que se manejan bien con Conda
+  - fastapi
+  - uvicorn
+  - pydantic
+  - pyarrow=14.0.1 # Fijamos la versión para evitar errores
+  - pip
+
+  # Dependencias que se instalarán con PIP
+  - pip:
+    - langchain
+    - langgraph
+    - langchain-huggingface
+    - langchain-community
+    - langchain-text-splitters
+    - langchain-chroma
+    - python-dotenv       # Para leer el archivo .env
+    - pypdf               # Para cargar los documentos PDF
+    - sentence-transformers # Dependencia clave para embeddings
+    - datasets==2.16.1    # Fijamos la versión para evitar errores
+    - pytest              # Para ejecutar las pruebas unitarias
+    - requests            # Para ejecutar el script test_api.py

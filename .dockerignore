@@ -1,0 +1,32 @@
+# 1. Archivos de Git y configuración de editores
+.git
+.gitignore
+.vscode/
+
+# 2. Entornos virtuales y caché de Python
+venv/
+env/
+.venv/
+__pycache__/
+
+# 3. Caché de pruebas
+.pytest_cache/
+
+# 4. Archivos del sistema operativo
+.DS_Store
+
+# 5. Archivos de prueba y experimentación
+*.ipynb
+test_*.py
+
+# 6. Scripts, documentación y datos fuente
+# Los datos originales (PDFs) y los scripts para procesarlos no deben estar en la imagen final.
+crear_embeddings.py
+productos_pdf/  # Excluye los PDFs originales
+README.md
+environment.yml
+.env.example
+
+# 7. Archivos de secretos y variables de entorno
+# ¡MUY IMPORTANTE! Nunca incluir secretos en la imagen.
+.env            # Excluye tus secretos

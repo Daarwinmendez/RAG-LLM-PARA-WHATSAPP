@@ -1,0 +1,38 @@
+# --- Archivos de Entorno y Secretos ---
+# Ignorar el archivo de variables de entorno local para no exponer secretos.
+# El archivo .env.example SÍ debe estar en el repositorio como plantilla.
+.env
+
+# --- Artefactos de Python ---
+# Ignorar la caché de Python y archivos compilados que se generan automáticamente.
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# --- Entornos Virtuales ---
+# Ignorar las carpetas de entornos virtuales para no subir dependencias locales.
+.venv/
+venv/
+env/
+
+# --- Datos Fuente ---
+# Ignorar los documentos PDF originales, ya que la base de datos 'db_chroma' 
+# ya fue generada y es la que se necesita en el repositorio.
+productos_pdf/
+
+# --- Configuración de IDEs y Editores ---
+# Ignorar archivos de configuración específicos del entorno de desarrollo.
+.vscode/
+.idea/
+*.swp
+
+# --- Artefactos de Pruebas ---
+# Ignorar la caché generada por herramientas de testing como pytest.
+.pytest_cache/
+htmlcov/
+
+# --- Archivos específicos del Sistema Operativo ---
+# Ignorar archivos de metadatos generados por macOS, Windows y Linux.
+.DS_Store
+Thumbs.db
