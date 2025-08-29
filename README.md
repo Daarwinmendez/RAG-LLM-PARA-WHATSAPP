@@ -1,7 +1,3 @@
-Claro, aquí tienes el archivo `README.md` con la sección de consultas reestructurada y la indentación corregida para que sea mucho más claro y fácil de leer.
-
------
-
 # Proyecto RAG - SolvexBot
 
 Este documento contiene la guía completa para desplegar y ejecutar el agente RAG SolvexBot utilizando Docker. El proyecto está diseñado para ser empaquetado en un contenedor autocontenido que expone una API para consultas.
