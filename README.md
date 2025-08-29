@@ -19,9 +19,21 @@ La aplicación necesita credenciales para funcionar. Deberás crear un archivo `
 2.  Abre el nuevo archivo `.env` con un editor de texto.
 3.  Rellena los valores, especialmente tu `HUGGINGFACE_API_TOKEN` y el `EMBEDDING_MODEL_NAME` que desees usar.
 
-### Paso 2: Crear la Base de Datos de Vectores
+### Paso 2: Obtener la Base de Datos de Vectores
 
-Este es un paso crucial que se realiza **una sola vez**. El siguiente script leerá los documentos PDF y creará la base de datos de vectores en una carpeta llamada `db_chroma`. Esta carpeta luego será copiada dentro de la imagen de Docker.
+Debido al gran tamaño de la base de datos de vectores (`db_chroma`), resultó poco práctico subirla directamente al repositorio de GitHub. Por lo tanto, tienes dos opciones para obtenerla.
+
+#### Opción A: Descargar la Base de Datos Pre-generada (Recomendado)
+
+Esta es la forma más rápida de empezar.
+
+1.  Descarga el archivo `db_chroma.zip` desde el siguiente enlace de Google Drive:
+      * **Enlace de descarga:** [https://drive.google.com/drive/folders/15onQ1dTiiLqEddWGy7lSdjMYFcTMrlZS?usp=share\_link](https://drive.google.com/drive/folders/15onQ1dTiiLqEddWGy7lSdjMYFcTMrlZS?usp=share_link)
+2.  Descomprime el archivo en la raíz de tu proyecto. Al finalizar, deberías tener una carpeta llamada `db_chroma`.
+
+#### Opción B: Generar la Base de Datos Manualmente
+
+Si prefieres, puedes generar los embeddings desde cero utilizando el script proporcionado.
 
 1.  Asegúrate de tener Python 3.12 y `pip` instalados.
 2.  Instala las dependencias necesarias para ejecutar el script:
@@ -33,7 +45,7 @@ Este es un paso crucial que se realiza **una sola vez**. El siguiente script lee
     python crear_embeddings.py
     ```
 
-Al finalizar, tendrás una nueva carpeta `db_chroma` en tu proyecto. Ahora estás listo para usar Docker.
+Al completar una de las dos opciones, tendrás la carpeta `db_chroma` en tu proyecto y estarás listo para usar Docker.
 
 -----
 
