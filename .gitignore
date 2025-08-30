@@ -18,8 +18,6 @@ env/
 
 # --- Datos Fuente ---
 # Ignorar los documentos PDF originales, ya que la base de datos 'db_chroma' 
-# ya fue generada y es la que se necesita en el repositorio.
-productos_pdf/
 
 # --- Configuración de IDEs y Editores ---
 # Ignorar archivos de configuración específicos del entorno de desarrollo.
